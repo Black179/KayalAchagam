@@ -30,7 +30,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ item, onClose, onPrev, onNex
       {/* Close Button */}
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-white hover:text-[#E0A911] bg-white/10 hover:bg-white/20 p-2 rounded-full border border-white/20 transition-all z-10"
+        className="absolute top-4 right-4 text-white hover:text-[#FFFF01] bg-white/10 hover:bg-white/20 p-2 rounded-full border border-white/20 transition-all z-10"
         aria-label="Close Lightbox"
       >
         <X className="w-6 h-6" />
@@ -40,7 +40,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ item, onClose, onPrev, onNex
       {onPrev && (
         <button
           onClick={onPrev}
-          className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#E0A911] bg-white/10 hover:bg-white/20 p-3 rounded-full border border-white/20 transition-all z-10 hidden sm:block"
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FFFF01] bg-white/10 hover:bg-white/20 p-3 rounded-full border border-white/20 transition-all z-10 hidden sm:block"
           aria-label="Previous Image"
         >
           <ChevronLeft className="w-6 h-6" />
@@ -50,7 +50,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ item, onClose, onPrev, onNex
       {onNext && (
         <button
           onClick={onNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#E0A911] bg-white/10 hover:bg-white/20 p-3 rounded-full border border-white/20 transition-all z-10 hidden sm:block"
+          className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-[#FFFF01] bg-white/10 hover:bg-white/20 p-3 rounded-full border border-white/20 transition-all z-10 hidden sm:block"
           aria-label="Next Image"
         >
           <ChevronRight className="w-6 h-6" />
@@ -59,7 +59,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ item, onClose, onPrev, onNex
 
       {/* Main Image Container */}
       <div className="relative max-w-4xl max-h-[80vh] w-full h-full flex flex-col items-center justify-center">
-        <div className="relative w-full h-[65vh] rounded border-2 border-[#E0A911] overflow-hidden bg-[#06361D] shadow-2xl">
+        <div className="relative w-full h-[65vh] rounded border-2 border-[#FFFF01] overflow-hidden bg-[#06361D] shadow-2xl">
           <Image
             src={item.src}
             alt={item.alt}
@@ -71,7 +71,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ item, onClose, onPrev, onNex
 
         {/* Caption */}
         <div className="mt-4 text-center max-w-2xl px-4">
-          <div className="inline-block text-[10px] font-bold uppercase tracking-widest text-[#E0A911] px-2.5 py-0.5 rounded bg-[#C91818] mb-1">
+          <div className="inline-block text-[10px] font-bold uppercase tracking-widest text-[#FFFF01] px-2.5 py-0.5 rounded bg-[#C91818] mb-1">
             {item.category}
           </div>
           <h4 className="text-white font-display text-lg sm:text-xl font-bold">

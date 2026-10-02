@@ -11,16 +11,16 @@ interface ActivityCardProps {
 
 export const ActivityCard: React.FC<ActivityCardProps> = ({ activity }) => {
   return (
-    <div className="bg-white rounded-lg border-2 border-[#E0A911]/70 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
+    <div className="bg-white rounded-lg border-2 border-[#FFFF01]/70 overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col justify-between hover:-translate-y-1">
       {/* Activity Media */}
-      <div className="relative aspect-[16/10] bg-[#06361D] overflow-hidden border-b border-[#E0A911]/40">
+      <div className="relative aspect-[16/10] bg-[#06361D] overflow-hidden border-b border-[#FFFF01]/40">
         <Image
           src={activity.image}
           alt={activity.title}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-[#C91818] text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded border border-[#E0A911] shadow">
+        <div className="absolute top-3 left-3 bg-[#C91818] text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded border border-[#FFFF01] shadow">
           {activity.category}
         </div>
       </div>

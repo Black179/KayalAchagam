@@ -25,7 +25,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         <div
           className={`inline-block text-[11px] font-bold tracking-[0.25em] uppercase px-3 py-1 mb-3 rounded-sm border ${
             isDark
-              ? "bg-[#C91818]/20 border-[#E0A911] text-[#E0A911]"
+              ? "bg-[#C91818]/20 border-[#FFFF01] text-[#FFFF01]"
               : "bg-[#0B4D2C]/10 border-[#0B4D2C]/30 text-[#0B4D2C]"
           }`}
         >
@@ -44,7 +44,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       {titleTamil && (
         <div
           className={`font-tamil-serif text-xl sm:text-2xl mt-2 font-bold ${
-            isDark ? "text-[#E0A911]" : "text-[#C91818]"
+            isDark ? "text-[#FFFF01]" : "text-[#C91818]"
           }`}
         >
           {titleTamil}
@@ -52,7 +52,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       )}
 
       <div
-        className={`h-1 w-24 my-4 bg-gradient-to-r from-[#C91818] via-[#E0A911] to-[#0B4D2C] ${
+        className={`h-1 w-24 my-4 bg-gradient-to-r from-[#C91818] via-[#FFFF01] to-[#0B4D2C] ${
           centered ? "mx-auto" : "mr-auto"
         }`}
       />
@@ -61,7 +61,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         <p
           className={`max-w-2xl text-base leading-relaxed ${
             centered ? "mx-auto" : ""
-          } ${isDark ? "text-[#FAF6E9]/80" : "text-gray-700"}`}
+          } ${isDark ? "text-[#FFFDF7]/80" : "text-gray-700"}`}
         >
           {description}
         </p>

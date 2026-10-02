@@ -26,18 +26,18 @@ export default function HomePage() {
       <Hero />
 
       {/* 2. ABOUT INTRODUCTION */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#E0A911]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 relative">
-            <div className="absolute -inset-3 bg-gradient-to-tr from-[#C91818] via-[#E0A911] to-[#0B4D2C] rounded-lg transform -rotate-1" />
-            <div className="relative aspect-[4/3] rounded bg-[#06361D] overflow-hidden border-2 border-[#E0A911] shadow-2xl">
+            <div className="absolute -inset-3 bg-gradient-to-tr from-[#C91818] via-[#FFFF01] to-[#0B4D2C] rounded-lg transform -rotate-1" />
+            <div className="relative aspect-[4/3] rounded bg-[#06361D] overflow-hidden border-2 border-[#FFFF01] shadow-2xl">
               <Image
                 src="/images/thiruvalluvar.jpg"
                 alt="Kayal Achagam Heritage & Documentation"
                 fill
                 className="object-cover object-top"
               />
-              <div className="absolute bottom-3 left-3 bg-[#06361D]/90 text-[#E0A911] text-xs font-bold font-tamil-serif px-3 py-1 rounded border border-[#E0A911]">
+              <div className="absolute bottom-3 left-3 bg-[#06361D]/90 text-[#FFFF01] text-xs font-bold font-tamil-serif px-3 py-1 rounded border border-[#FFFF01]">
                 திருவள்ளுவர் · தமிழ்ப் பாரம்பரியம்
               </div>
             </div>
@@ -63,10 +63,10 @@ export default function HomePage() {
             <div className="pt-2 flex flex-wrap gap-4">
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs px-5 py-3 rounded border border-[#E0A911] uppercase tracking-wider transition-all duration-300 shadow-md"
+                className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs px-5 py-3 rounded border border-[#FFFF01] uppercase tracking-wider transition-all duration-300 shadow-md"
               >
                 <span>Learn More About Us</span>
-                <ArrowRight className="w-4 h-4 text-[#E0A911]" />
+                <ArrowRight className="w-4 h-4 text-[#FFFF01]" />
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function HomePage() {
       </section>
 
       {/* 3. KEY SERVICES PREVIEW */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FAF6E9] border-b border-[#E0A911]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7] border-b border-[#FFFF01]/30">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badgeText="Core Offerings"
@@ -92,17 +92,17 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <span>View All Available Services</span>
-              <ArrowRight className="w-4 h-4 text-[#E0A911]" />
+              <ArrowRight className="w-4 h-4 text-[#FFFF01]" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* 4. FEATURED PRODUCTS */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#E0A911]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badgeText="Merchandise & Publications"
@@ -120,19 +120,19 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/services#products"
-              className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#06361D] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#06361D] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <span>Explore Full Catalogue</span>
-              <Printer className="w-4 h-4 text-[#E0A911]" />
+              <Printer className="w-4 h-4 text-[#FFFF01]" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* 5. TAMIL HERITAGE FEATURE */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#06361D] text-white kolam-pattern relative overflow-hidden border-y-4 border-[#E0A911]">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#06361D] text-white kolam-pattern relative overflow-hidden border-y-4 border-[#FFFF01]">
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <div className="inline-block text-[11px] font-bold tracking-[0.3em] text-[#E0A911] uppercase bg-[#C91818] px-4 py-1 rounded border border-[#E0A911] mb-6">
+          <div className="inline-block text-[11px] font-bold tracking-[0.3em] text-[#FFFF01] uppercase bg-[#C91818] px-4 py-1 rounded border border-[#FFFF01] mb-6">
             TAMIL HERITAGE · தமிழ்ப் பாரம்பரியம்
           </div>
 
@@ -142,20 +142,20 @@ export default function HomePage() {
             {contactData.kural.line2}"
           </blockquote>
 
-          <div className="h-1 w-32 bg-[#E0A911] mx-auto my-6" />
+          <div className="h-1 w-32 bg-[#FFFF01] mx-auto my-6" />
 
-          <p className="text-sm sm:text-base text-[#FAF6E9]/90 font-medium max-w-xl mx-auto italic mb-3">
+          <p className="text-sm sm:text-base text-[#FFFDF7]/90 font-medium max-w-xl mx-auto italic mb-3">
             "{contactData.kural.translation}"
           </p>
 
-          <p className="text-xs tracking-[0.25em] text-[#E0A911] font-bold uppercase">
+          <p className="text-xs tracking-[0.25em] text-[#FFFF01] font-bold uppercase">
             — {contactData.kural.source} · {contactData.kural.kuralNo}
           </p>
         </div>
       </section>
 
       {/* 6. PUBLICATIONS SECTION PREVIEW */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FAF6E9] border-b border-[#E0A911]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7] border-b border-[#FFFF01]/30">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badgeText="Literature Archives"
@@ -173,17 +173,17 @@ export default function HomePage() {
           <div className="mt-10 text-center">
             <Link
               href="/services#publications"
-              className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <span>View All Publications</span>
-              <BookOpen className="w-4 h-4 text-[#E0A911]" />
+              <BookOpen className="w-4 h-4 text-[#FFFF01]" />
             </Link>
           </div>
         </div>
       </section>
 
       {/* 7. ACTIVITIES PREVIEW */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#E0A911]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             badgeText="Community & Events"
@@ -201,7 +201,7 @@ export default function HomePage() {
           <div className="mt-12 text-center">
             <Link
               href="/about#activities"
-              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-lg transition-transform hover:-translate-y-0.5"
             >
               <span>View All Activities →</span>
             </Link>
@@ -210,26 +210,26 @@ export default function HomePage() {
       </section>
 
       {/* 8. CONTACT CTA BAR */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#06361D] via-[#0B4D2C] to-[#C91818] text-white border-t-4 border-[#E0A911]">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#06361D] via-[#0B4D2C] to-[#C91818] text-white border-t-4 border-[#FFFF01]">
         <div className="max-w-5xl mx-auto text-center space-y-6">
-          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#E0A911] uppercase border border-[#E0A911] px-4 py-1 rounded">
+          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF01] uppercase border border-[#FFFF01] px-4 py-1 rounded">
             GET IN TOUCH WITH KAYAL ACHAGAM
           </div>
 
-          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-[#FAF6E9]">
+          <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-[#FFFDF7]">
             Need Document Printing or Official Assistance?
           </h2>
 
-          <p className="font-tamil-serif font-bold text-xl text-[#E0A911]">
+          <p className="font-tamil-serif font-bold text-xl text-[#FFFF01]">
             அச்சு, விண்ணப்பம் மற்றும் மின் சேவைகளுக்கு உடனே தொடர்பு கொள்ளுங்கள்
           </p>
 
           <div className="pt-4 flex flex-wrap justify-center items-center gap-4">
             <a
               href={`tel:${contactData.phone}`}
-              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
             >
-              <Phone className="w-4 h-4 text-[#E0A911]" />
+              <Phone className="w-4 h-4 text-[#FFFF01]" />
               <span>Call: {contactData.phone}</span>
             </a>
 
@@ -237,15 +237,15 @@ export default function HomePage() {
               href={`https://wa.me/${contactData.whatsappNumber}?text=${encodeURIComponent(contactData.whatsappDefaultMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#06361D] hover:bg-emerald-800 text-white font-bold text-xs px-6 py-3.5 rounded border border-[#E0A911] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#06361D] hover:bg-emerald-800 text-white font-bold text-xs px-6 py-3.5 rounded border border-[#FFFF01] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
             >
-              <MessageSquare className="w-4 h-4 text-[#E0A911]" />
+              <MessageSquare className="w-4 h-4 text-[#FFFF01]" />
               <span>WhatsApp Message</span>
             </a>
 
             <a
               href={`mailto:${contactData.email}`}
-              className="inline-flex items-center gap-2 bg-[#E0A911] hover:bg-amber-400 text-[#06361D] font-bold text-xs px-6 py-3.5 rounded border border-[#06361D] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 bg-[#FFFF01] hover:bg-[#e6e600] text-[#06361D] font-bold text-xs px-6 py-3.5 rounded border border-[#06361D] uppercase tracking-wider shadow-xl transition-transform hover:-translate-y-0.5"
             >
               <Mail className="w-4 h-4 text-[#06361D]" />
               <span>Send Email</span>

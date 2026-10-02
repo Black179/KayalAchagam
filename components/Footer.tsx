@@ -5,17 +5,17 @@ import { MapPin, Phone, Mail, ShieldCheck } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#06361D] text-white border-t-4 border-[#E0A911] kolam-pattern-dark pt-16 pb-8">
+    <footer className="bg-[#06361D] text-white border-t-4 border-[#FFFF01] kolam-pattern-dark pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#E0A911]/30">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#FFFF01]/30">
           {/* Column 1: Branding & Thirukkural */}
           <div className="md:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded bg-[#C91818] border-2 border-[#E0A911] flex items-center justify-center font-display font-black text-white text-xl shadow-md">
+              <div className="w-10 h-10 rounded bg-[#C91818] border-2 border-[#FFFF01] flex items-center justify-center font-display font-black text-white text-xl shadow-md">
                 K
               </div>
               <div>
-                <div className="font-display font-black text-2xl text-[#E0A911] tracking-wider">
+                <div className="font-display font-black text-2xl text-[#FFFF01] tracking-wider">
                   KAYAL ACHAGAM
                 </div>
                 <div className="text-[10px] tracking-[0.25em] text-white/80 uppercase font-bold">
@@ -24,16 +24,16 @@ export const Footer: React.FC = () => {
               </div>
             </div>
 
-            <p className="text-xs text-[#FAF6E9]/90 leading-relaxed max-w-md">
+            <p className="text-xs text-[#FFFDF7]/90 leading-relaxed max-w-md">
               Kayal Achagam Centre is an official local organization and service centre providing printing, document processing, e-services, publications, and Tamil heritage products for the community.
             </p>
 
             {/* Thirukkural Badge */}
-            <div className="p-4 rounded bg-[#0B4D2C] border border-[#E0A911]/50 text-left">
+            <div className="p-4 rounded bg-[#0B4D2C] border border-[#FFFF01]/50 text-left">
               <p className="font-tamil-serif text-sm font-bold text-[#FFF5D0] leading-snug">
                 "{contactData.kural.line1} {contactData.kural.line2}"
               </p>
-              <p className="text-[10px] text-[#E0A911] font-bold mt-1 uppercase tracking-wider">
+              <p className="text-[10px] text-[#FFFF01] font-bold mt-1 uppercase tracking-wider">
                 {contactData.kural.source} · {contactData.kural.kuralNo}
               </p>
             </div>
@@ -41,30 +41,30 @@ export const Footer: React.FC = () => {
 
           {/* Column 2: Navigation Links */}
           <div className="md:col-span-3 space-y-3">
-            <h4 className="font-display font-extrabold text-[#E0A911] text-sm uppercase tracking-widest border-b border-[#E0A911]/40 pb-2">
+            <h4 className="font-display font-extrabold text-[#FFFF01] text-sm uppercase tracking-widest border-b border-[#FFFF01]/40 pb-2">
               Website Navigation
             </h4>
             <ul className="space-y-2 text-xs font-bold uppercase tracking-wider">
               <li>
-                <Link href="/" className="hover:text-[#E0A911] transition-colors flex items-center gap-2">
+                <Link href="/" className="hover:text-[#FFFF01] transition-colors flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C91818]" />
                   <span>1. HOME</span>
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#E0A911] transition-colors flex items-center gap-2">
+                <Link href="/about" className="hover:text-[#FFFF01] transition-colors flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C91818]" />
                   <span>2. ABOUT & ACTIVITIES</span>
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-[#E0A911] transition-colors flex items-center gap-2">
+                <Link href="/services" className="hover:text-[#FFFF01] transition-colors flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C91818]" />
                   <span>3. SERVICES & PRODUCTS</span>
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-[#E0A911] transition-colors flex items-center gap-2">
+                <Link href="/contact" className="hover:text-[#FFFF01] transition-colors flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#C91818]" />
                   <span>4. GALLERY & CONTACT</span>
                 </Link>
@@ -74,7 +74,7 @@ export const Footer: React.FC = () => {
 
           {/* Column 3: Contact Summary */}
           <div className="md:col-span-4 space-y-3">
-            <h4 className="font-display font-extrabold text-[#E0A911] text-sm uppercase tracking-widest border-b border-[#E0A911]/40 pb-2">
+            <h4 className="font-display font-extrabold text-[#FFFF01] text-sm uppercase tracking-widest border-b border-[#FFFF01]/40 pb-2">
               Official Contact
             </h4>
             <div className="space-y-2 text-xs text-white/90">
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
         {/* Bottom Copyright Bar */}
         <div className="pt-6 flex flex-wrap justify-between items-center text-xs text-white/70 gap-4">
           <div className="flex items-center gap-2">
-            <ShieldCheck className="w-4 h-4 text-[#E0A911]" />
+            <ShieldCheck className="w-4 h-4 text-[#FFFF01]" />
             <span>© 2026 Kayal Achagam Centre. All Rights Reserved.</span>
           </div>
           <div className="font-tamil-sans text-emerald-300 font-semibold text-[11px]">
