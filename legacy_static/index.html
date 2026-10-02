@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KAYAL ACHAGAM CENTRE</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Noto+Serif+Tamil:wght@500;700&family=Playfair+Display:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--g:#0b4d2c;--g2:#06361d;--y:#e0a911;--iv:#faf6e9;--t:#10301d}
+html{scroll-behavior:smooth;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);scroll-padding-top:64px}
+body{background:var(--iv);color:var(--t);font-family:Inter,'Noto Sans Tamil',system-ui,sans-serif;overflow-x:hidden}
+.disp{font-family:'Playfair Display',Georgia,serif;font-weight:900;line-height:.95;letter-spacing:-.01em}
+.serif{font-family:'Noto Serif Tamil',Georgia,serif}
+.num{font-family:'Playfair Display',serif;font-weight:900;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--y)}
+.vert{writing-mode:vertical-rl;letter-spacing:.3em;font-size:.7rem;text-transform:uppercase}
+.rule{height:1px;background:var(--y)}
+.fr{border:1.5px solid var(--y)}.fr2{border:1.5px solid var(--y);outline:1px solid var(--y);outline-offset:5px}
+.ph{overflow:hidden;position:relative}.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.6s ease}.ph:hover img{transform:scale(1.04)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s,transform .9s}.rv.in{opacity:1;transform:none}
+.kolam{background-image:radial-gradient(circle,rgba(224,169,17,.2) 1.4px,transparent 1.5px);background-size:24px 24px}
+.btn{background:var(--y);color:var(--g2);font-weight:700;padding:.6rem 1.2rem;font-size:.8rem;letter-spacing:.08em;display:inline-block;transition:transform .2s}.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--y);border:1.5px solid var(--y)}
+.chip{border:1px solid currentColor;padding:.35rem .8rem;font-size:.85rem;display:inline-block;margin:.25rem .25rem 0 0}
+</style>
+</head>
+<body>
+<nav class="sticky top-0 z-40" style="background:var(--g2)">
+ <div class="max-w-7xl mx-auto px-5 py-3 flex justify-between items-center">
+  <a href="#home" class="disp text-sm md:text-base tracking-widest" style="color:var(--y)" id="nn"></a>
+  <ul id="menu" class="hidden lg:flex gap-7 text-xs tracking-widest text-white"></ul>
+  <button id="bg" class="lg:hidden text-2xl" style="color:var(--y)" aria-label="Menu">☰</button>
+ </div>
+ <ul id="mm" class="hidden lg:hidden px-5 pb-3 text-white text-sm space-y-2 tracking-widest"></ul>
+ <div class="rule"></div>
+</nav>
+
+<header id="home" style="background:var(--iv)">
+ <div class="relative max-w-7xl mx-auto px-5 pt-10 pb-24 lg:pb-28">
+  <div class="absolute left-5 top-5 w-8 h-8 border-t-2 border-l-2" style="border-color:var(--y)"></div>
+  <div class="absolute right-5 top-5 w-8 h-8 border-t-2 border-r-2" style="border-color:var(--y)"></div>
+  <div class="text-center rv">
+   <p class="serif text-lg md:text-2xl leading-relaxed whitespace-pre-line" style="color:var(--g)" id="k1"></p>
+   <p class="text-xs mt-2 tracking-[.3em]" style="color:#a67c00" id="kn"></p>
+   <div class="rule max-w-xs mx-auto mt-5"></div>
+  </div>
+  <h1 class="disp mt-8 rv text-center" style="font-size:clamp(2.6rem,9vw,8.8rem);color:var(--g)">KAYAL ACHAGAM<br><span class="flex items-center gap-4 sm:gap-6"><span class="rule flex-1" style="height:3px"></span>CENTRE<span class="rule flex-1" style="height:3px"></span></span></h1>
+ </div>
+ <div style="background:var(--g)" class="kolam">
+  <div class="max-w-7xl mx-auto px-5 pb-14 grid grid-cols-2 md:grid-cols-[28%_1fr_26%] gap-x-4 md:gap-x-8 gap-y-8 items-start">
+   <div class="relative w-full max-w-[340px] aspect-[1/.96] -mt-14 md:-mt-24 mx-auto rv" id="tri"></div>
+   <div class="text-white text-center pt-2 md:pt-8 rv col-span-2 md:col-span-1 order-3 md:order-none">
+    <p class="text-xs tracking-[.35em]" style="color:var(--y)">📍 ADDRESS</p>
+    <p class="serif text-xl md:text-3xl mt-3 leading-snug" id="ad"></p>
+    <div class="rule my-5 max-w-[220px] mx-auto"></div>
+    <div id="ct" class="text-sm space-y-1 opacity-90"></div>
+    <div id="cta" class="flex flex-wrap gap-3 mt-5 justify-center"></div>
+   </div>
+   <div class="relative w-[82%] md:w-full max-w-[270px] -mt-6 md:-mt-24 mx-auto rv" id="pr"></div>
+  </div>
+ </div>
+</header>
+
+<section id="about" class="max-w-7xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-12 gap-10 items-center">
+ <div class="md:col-span-8 md:col-start-3 text-center rv">
+  <p class="text-xs tracking-[.35em]" style="color:var(--y)">ABOUT</p>
+  <h2 class="disp text-4xl md:text-6xl mt-2" style="color:var(--g)">KAYAL ACHAGAM<br>CENTRE</h2>
+  <div class="rule w-24 mx-auto my-6"></div>
+  <p class="max-w-xl mx-auto text-lg leading-relaxed" id="ab"></p>
+ </div>
+</section>
+
+<div id="svc"></div>
+
+<section id="heritage" class="kolam text-white relative overflow-hidden" style="background-color:var(--g2)">
+ <div class="max-w-7xl mx-auto px-5 py-24 grid md:grid-cols-12 gap-10 items-center">
+  <div class="md:col-span-7 rv">
+   <p class="text-xs tracking-[.35em]" style="color:var(--y)">TAMIL HERITAGE · தமிழ்ப் பாரம்பரியம்</p>
+   <p class="serif text-2xl md:text-4xl leading-relaxed mt-6 whitespace-pre-line" style="color:#fff0b8" id="k2"></p>
+   <div class="rule w-24 my-6"></div>
+   <p class="text-xs tracking-widest" style="color:var(--y)">திருக்குறள் · கல்வி · 391</p>
+  </div>
+  <div class="md:col-span-4 md:col-start-9 relative rv">
+   <div class="absolute -inset-3 -translate-x-4 translate-y-4 fr"></div>
+   <div class="ph fr2 aspect-[3/4]"><img src="images/thiruvalluvar.jpg" alt="Thiruvalluvar" loading="lazy" style="object-position:50% 25%"></div>
+  </div>
+ </div>
+</section>
+
+<section id="gallery" class="max-w-7xl mx-auto px-5 py-20">
+ <div class="flex items-end gap-4"><h2 class="disp text-5xl md:text-7xl" style="color:var(--g)">GALLERY</h2><div class="rule flex-1 mb-3"></div></div>
+ <div id="gl" class="columns-2 md:columns-3 gap-4 mt-10"></div>
+</section>
+
+<section id="contact" class="text-center px-5 py-24" style="background:var(--g);color:#fff">
+ <p class="text-xs tracking-[.35em]" style="color:var(--y)">CONTACT</p>
+ <h2 class="disp text-4xl md:text-6xl mt-3" style="color:var(--y)" id="cn"></h2>
+ <div class="rule w-24 mx-auto my-6"></div>
+ <div id="cb" class="space-y-2 text-lg"></div>
+ <div id="cta2" class="flex flex-wrap justify-center gap-3 mt-8"></div>
+</section>
+
+<footer class="px-5 py-8 text-sm text-white" style="background:var(--g2);border-top:1px solid var(--y)">
+ <div class="max-w-7xl mx-auto flex flex-wrap justify-between gap-4">
+  <span class="disp tracking-widest" style="color:var(--y)" id="fn"></span><span id="fc"></span>
+ </div>
+ <p class="text-center mt-6 opacity-70">© Kayal Achagam Centre. All Rights Reserved.</p>
+</footer>
+<div id="lb" class="fixed inset-0 z-50 bg-black/85 items-center justify-center p-4" style="display:none"><img id="li" class="max-h-full max-w-full" alt=""></div>
+
+<script>
+/* ===== EDIT HERE ===== */
+const C={
+ shopName:"KAYAL ACHAGAM CENTRE", phone:"9003920106", alternatePhone:"04564-221048", email:"senkayal2016@gmail.com",
+ address:"முத்தையா கோவில் எதிர்புறம், காட்டுப்பரமக்குடி, பரமக்குடி", mapsQuery:"முத்தையா கோவில், காட்டுப்பரமக்குடி, பரமக்குடி",
+ about:"Kayal Achagam Centre is a local centre providing printing, documentation and related services to the community.",
+ kural:"கற்க கசடறக் கற்பவை கற்றபின்\nநிற்க அதற்குத் தக", kuralNo:"திருக்குறள் · 391",
+ galleryImages:[] /* {src,alt} */,
+ sections:[
+  {n:"01",icon:"🖨️",image:"",t:"PRINTING &<br>DOCUMENTS",v:"splitL",items:["B&W Xerox","Print Out","Scanning","Computer Typing","English & Tamil Typing","Spiral Binding","Lamination","De-lamination"]},
+  {n:"02",icon:"🌐",image:"",t:"ONLINE<br>APPLICATIONS",v:"splitR",items:["Online Applications","Email Services","Exam Result Services"]},
+  {n:"03",icon:"💳",image:"",t:"FEES<br>&amp; PAYMENTS",v:"green",items:["College Fees","Exam Fees","EB Bill Payment"]},
+  {n:"04",icon:"🚌",image:"",t:"TICKETS<br>&amp; TRAVEL",v:"overlap",items:["Bus & Train Ticket Booking","Ticket Printing","Hall Ticket Printing"]},
+  {n:"05",icon:"📄",image:"",t:"GOVERNMENT &<br>DOCUMENT SERVICES",v:"framed",items:["PAN Card Services","Passport Services","Patta & Chitta"]},
+  {n:"06",icon:"🏦",image:"",t:"BANKING &<br>MONEY",v:"float",items:["Aadhaar Banking","Money Transfer"]},
+  {n:"07",icon:"👕",image:"",t:"T-SHIRT<br>PRINTING",v:"photoL",items:["T-Shirt Printing"]},
+  {n:"08",icon:"🚩",image:"",t:"KODI / FLAG<br>PRINTING",v:"photoFull",items:["Kodi / Flag Printing"]}
+ ]
+};
+const $=i=>document.getElementById(i),tel="tel:"+C.phone,wa="https://wa.me/91"+C.phone;
+const L=[["HOME","#home"],["ABOUT","#about"],["SERVICES","#s-01"],["TAMIL HERITAGE","#heritage"],["GALLERY","#gallery"],["CONTACT","#contact"]];
+$("nn").textContent=C.shopName;$("fn").textContent=C.shopName;$("cn").textContent=C.shopName;
+$("k1").textContent=C.kural;$("ad").textContent=C.address;$("k2").textContent=C.kural;$("kn").textContent=C.kuralNo;$("ab").textContent=C.about;
+$("menu").innerHTML=L.map(l=>`<li><a class="hover:text-yellow-300" href="${l[1]}">${l[0]}</a></li>`).join("");
+$("mm").innerHTML=L.map(l=>`<li><a href="${l[1]}">${l[0]}</a></li>`).join("");
+$("bg").onclick=()=>$("mm").classList.toggle("hidden");$("mm").onclick=()=>$("mm").classList.add("hidden");
+$("fc").textContent=C.phone+" · "+C.alternatePhone+" · "+C.email;
+
+const im=(s,a,pos,cls)=>`<div class="ph fr ${cls}" style="background:var(--g)"><img src="${s}" alt="${a}" style="object-position:${pos}"></div>`;
+const bl=(s,a,pos,st)=>`<div class="ph fr absolute aspect-[4/5]" style="${st};background:var(--g)"><img src="${s}" alt="${a}" style="object-position:${pos}"></div>`;
+$("tri").innerHTML=bl("images/pavanar.jpg","Pavanar","50% 20%","left:0;top:46%;width:40%;z-index:2")
+ +bl("images/immanuel.jpg","Immanuel","50% 30%","right:0;top:46%;width:40%;z-index:2")
+ +bl("images/thiruvalluvar.jpg","Thiruvalluvar","50% 15%","left:30%;top:0;width:40%;z-index:3");
+$("pr").innerHTML=`<div class="absolute -inset-2 translate-x-3 translate-y-3 fr"></div>`+im("images/prabhakaran.jpg","Portrait","50% 88%","aspect-[4/5] fr2 relative");
+
+const row=(i,t,h)=>`<p>${i} ${h?`<a class="underline" href="${h}">${t}</a>`:t}</p>`;
+const info=row("📞",C.phone,tel)+row("☎️",C.alternatePhone,"tel:"+C.alternatePhone.replace(/\D/g,""))+row("✉️",C.email,"mailto:"+C.email)+row("📍",C.address);
+$("ct").innerHTML=info;$("cb").innerHTML=info;
+const dir=C.mapsQuery?`<a class="btn o" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(C.mapsQuery)}" target="_blank" rel="noopener">LOCATION</a>`:"";
+const btns=`<a class="btn" href="${tel}">CALL</a><a class="btn" href="${wa}" target="_blank" rel="noopener">WHATSAPP</a><a class="btn o" href="mailto:${C.email}">EMAIL</a>${dir}`;
+$("cta").innerHTML=btns;$("cta2").innerHTML=btns;
+
+const chips=(a,c)=>a.map(x=>`<span class="chip ${c||""}">${x}</span>`).join("");
+const big=(n,c)=>`<div class="num text-[7rem] md:text-[11rem] ${c||""}">${n}</div>`;
+const pic=(s,c)=>s.image?`<div class="ph fr2 ${c}"><img loading="lazy" src="${s.image}" alt="${s.items[0]}"></div>`:`<div class="ph fr ${c} kolam flex items-center justify-center" style="background:var(--g)"><span class="text-6xl md:text-7xl opacity-90">${s.icon}</span></div>`;
+const enq=`<a class="btn mt-6" href="#contact">ENQUIRE</a>`;
+const V={
+ splitL:s=>`<section id="s-${s.n}" class="max-w-7xl mx-auto px-5 py-20 grid md:grid-cols-2 gap-10 items-center"><div class="fr2 p-6 md:p-12 rv" style="background:#fff">${big(s.n)}<div class="rule my-4"></div><div>${chips(s.items)}</div>${enq}</div><div class="rv">${pic(s,"aspect-[4/3] mb-6")}<h2 class="disp text-5xl md:text-7xl" style="color:var(--g)">${s.t}</h2></div></section>`,
+ splitR:s=>`<section id="s-${s.n}" class="max-w-7xl mx-auto px-5 py-20 grid md:grid-cols-12 gap-10 items-center"><div class="md:col-span-7 rv"><h2 class="disp text-5xl md:text-7xl" style="color:var(--g)">${s.t}</h2><div class="rule w-24 my-6"></div><div>${chips(s.items)}</div>${enq}</div><div class="md:col-span-4 md:col-start-9 rv">${pic(s,"aspect-[4/5]")}<div class="text-right mt-4">${big(s.n)}</div></div></section>`,
+ green:s=>`<section id="s-${s.n}" class="kolam" style="background-color:var(--g);color:#fff"><div class="max-w-7xl mx-auto px-5 py-24 grid md:grid-cols-2 gap-10 items-end"><div class="rv"><h2 class="disp text-6xl md:text-8xl" style="color:var(--y)">${s.t}</h2>${big(s.n,"mt-6")}</div><div class="rv">${pic(s,"aspect-[16/10] mb-6")}${chips(s.items)}<div>${enq}</div></div></div></section>`,
+ overlap:s=>`<section id="s-${s.n}" class="max-w-7xl mx-auto px-5 py-24"><div class="relative">${pic(s,"h-56 md:h-80")}<div class="absolute right-4 top-2">${big(s.n)}</div></div><div class="relative -mt-20 ml-4 md:ml-16 max-w-xl p-8 rv" style="background:var(--iv);border:1.5px solid var(--y)"><h2 class="disp text-4xl md:text-6xl" style="color:var(--g)">${s.t}</h2><div class="rule my-5"></div>${chips(s.items)}<div>${enq}</div></div></section>`,
+ framed:s=>`<section id="s-${s.n}" class="py-24 px-5" style="background:#f1ead2"><div class="max-w-5xl mx-auto fr2 p-8 md:p-16 text-center rv" style="background:var(--iv)">${big(s.n,"mx-auto")}<h2 class="disp text-4xl md:text-6xl mt-4" style="color:var(--g)">${s.t}</h2><div class="rule w-24 mx-auto my-6"></div>${chips(s.items)}<div>${enq}</div></div></section>`,
+ float:s=>`<section id="s-${s.n}" class="max-w-7xl mx-auto px-5 py-24 relative"><div class="disp text-6xl md:text-9xl" style="color:var(--g)">${s.t}</div><div class="md:absolute md:right-10 md:bottom-4 mt-8 p-6 max-w-sm" style="background:var(--g);color:var(--y);border:1.5px solid var(--y)">${big(s.n)}<div class="rule my-3"></div>${chips(s.items)}</div></section>`,
+ photoL:s=>`<section id="s-${s.n}" class="max-w-7xl mx-auto px-5 py-24 grid md:grid-cols-12 gap-10 items-center"><div class="md:col-span-6 relative rv"><div class="absolute inset-0 translate-x-5 translate-y-5" style="background:var(--g)"></div>${pic(s,"aspect-[4/3] relative")}</div><div class="md:col-span-5 md:col-start-8 rv">${big(s.n)}<h2 class="disp text-5xl md:text-7xl mt-3" style="color:var(--g)">${s.t}</h2><div class="rule w-24 my-5"></div>${chips(s.items)}<div>${enq}</div></div></section>`,
+ photoFull:s=>`<section id="s-${s.n}" class="px-5 py-24" style="background:#f1ead2"><div class="max-w-7xl mx-auto relative mb-16 rv">${pic(s,"h-72 md:h-[26rem]")}<div class="md:absolute md:right-6 md:-bottom-12 max-w-md p-8 mt-4 md:mt-0" style="background:var(--g);color:#fff;border:1.5px solid var(--y)">${big(s.n)}<h2 class="disp text-4xl md:text-5xl mt-3" style="color:var(--y)">${s.t}</h2><div class="rule my-4"></div>${chips(s.items)}<div>${enq}</div></div></div></section>`
+};
+$("svc").innerHTML=C.sections.map(s=>V[s.v](s)).join("");
+
+$("gl").innerHTML=C.galleryImages.length?C.galleryImages.map((g,i)=>`<div class="ph fr mb-4 ${i%3==1?"aspect-[3/4]":"aspect-[4/3]"} cursor-pointer" onclick="$('li').src='${g.src}';$('lb').style.display='flex'"><img loading="lazy" src="${g.src}" alt="${g.alt||""}"></div>`).join(""):`<p class="opacity-60" style="column-span:all">Shop photographs will appear here — add them to galleryImages.</p>`;
+$("lb").onclick=()=>$("lb").style.display="none";
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.1});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
