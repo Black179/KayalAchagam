@@ -30,16 +30,16 @@ export const Hero: React.FC = () => {
           </p>
         </div>
 
-        {/* Large Editorial Heading - Centered Stylish Tamil Logo */}
-        <div className="text-center w-full max-w-5xl mx-auto px-4 my-4 flex flex-col items-center justify-center">
+        {/* Large Editorial Heading - Centered Bold 3D Tamil Logo */}
+        <div className="text-center w-full max-w-6xl mx-auto px-2 sm:px-4 my-6 flex flex-col items-center justify-center">
           <h1 className="w-full flex justify-center items-center">
             <Image
-              src="/images/kayal_tamil_logo.png"
+              src="/images/kayal_bold_3d_logo.png"
               alt="கயல் அச்சகம் - Kayal Achagam"
-              width={873}
-              height={124}
+              width={978}
+              height={278}
               priority
-              className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto object-contain mx-auto drop-shadow-md select-none transition-transform hover:scale-[1.02] duration-300"
+              className="w-full max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-auto object-contain mx-auto filter drop-shadow-[0_12px_28px_rgba(0,0,0,0.35)] select-none transition-transform hover:scale-[1.02] duration-300"
             />
             <span className="sr-only">கயல் அச்சகம் - Kayal Achagam</span>
           </h1>
@@ -72,22 +72,22 @@ export const Hero: React.FC = () => {
       {/* Hero Collage Section - Green & Red Canvas */}
       <div className="bg-[#0B4D2C] kolam-pattern py-12 px-4 border-t-2 border-[#FFFF00]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
-          {/* Left Figure Cards - Pavanar & Immanuel */}
+          {/* Left Figure Cards - Prabhakaran & Immanuel */}
           <div className="md:col-span-4 grid grid-cols-2 gap-4">
             <div className="relative group overflow-hidden rounded border-2 border-[#FFFF00] bg-[#06361D] shadow-lg">
               <div className="aspect-[3/4] relative">
                 <Image
-                  src="/images/pavanar.jpg"
-                  alt="Devaneya Pavanar"
+                  src="/images/prabhakaran.jpg"
+                  alt="Velupillai Prabhakaran"
                   fill
-                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-bottom group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-2 bg-[#06361D] text-center border-t border-[#FFFF00]/40">
                 <div className="text-[11px] font-bold text-[#FFFF00] font-tamil-sans">
-                  தேவநேயப் பாவாணர்
+                  வே. பிரபாகரன்
                 </div>
-                <div className="text-[9px] text-white/70 uppercase tracking-wider">Linguistic Pioneer</div>
+                <div className="text-[9px] text-white/70 uppercase tracking-wider">Historical Archival Print</div>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Figure Cards - Thiruvalluvar & Prabhakaran */}
+          {/* Right Figure Cards - Thiruvalluvar & Pavanar */}
           <div className="md:col-span-4 grid grid-cols-2 gap-4">
             <div className="relative group overflow-hidden rounded border-2 border-[#FFFF00] bg-[#06361D] shadow-lg">
               <div className="aspect-[3/4] relative">
@@ -173,17 +173,17 @@ export const Hero: React.FC = () => {
             <div className="relative group overflow-hidden rounded border-2 border-[#FFFF00] bg-[#06361D] shadow-lg">
               <div className="aspect-[3/4] relative">
                 <Image
-                  src="/images/prabhakaran.jpg"
-                  alt="Velupillai Prabhakaran"
+                  src="/images/pavanar.jpg"
+                  alt="Devaneya Pavanar"
                   fill
-                  className="object-cover object-bottom group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-2 bg-[#06361D] text-center border-t border-[#FFFF00]/40">
                 <div className="text-[11px] font-bold text-[#FFFF00] font-tamil-sans">
-                  வே. பிரபாகரன்
+                  தேவநேயப் பாவாணர்
                 </div>
-                <div className="text-[9px] text-white/70 uppercase tracking-wider">Historical Archival Print</div>
+                <div className="text-[9px] text-white/70 uppercase tracking-wider">Linguistic Pioneer</div>
               </div>
             </div>
           </div>
