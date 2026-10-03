@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@700;800&family=Arima:wght@700;800;900&family=Coiny&family=Inter:wght@300;400;500;600;700;800&family=Kavivanar&family=Noto+Sans+Tamil:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -28,6 +28,8 @@
   --font-playfair: 'Playfair Display', Georgia, serif;
   --font-tamil-sans: 'Noto Sans Tamil', sans-serif;
   --font-tamil-serif: 'Noto Serif Tamil', serif;
+  --font-tamil-stylish: 'Kavivanar', 'Arima', cursive;
+  --font-tamil-display: 'Arima', 'Coiny', cursive;
 }
 
 html {
@@ -70,6 +72,14 @@ body {
 
 .font-tamil-sans {
   font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+.font-tamil-stylish {
+  font-family: 'Kavivanar', 'Arima', cursive, serif;
+}
+
+.font-tamil-display {
+  font-family: 'Arima', 'Coiny', cursive, sans-serif;
 }
 
 /* Decorative Backgrounds */

@@ -31,15 +31,10 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Large Editorial Heading */}
-        <div className="text-center max-w-5xl mx-auto">
-          <h1 className="font-tamil-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[1.05] text-[#0B4D2C]">
-            காயல் அச்சகம்
-            <span className="flex items-center justify-center gap-4 sm:gap-6 mt-3">
-              <span className="h-1.5 flex-1 bg-gradient-to-r from-transparent via-[#0B4D2C] to-[#C91818]" />
-              <span className="text-[#C91818] font-black tracking-widest text-3xl sm:text-5xl lg:text-6xl drop-shadow-sm font-display">
-                CENTRE
-              </span>
-              <span className="h-1.5 flex-1 bg-gradient-to-r from-[#C91818] via-[#0B4D2C] to-transparent" />
+        <div className="text-center w-full max-w-7xl mx-auto px-2 sm:px-4">
+          <h1 className="w-full">
+            <span className="font-tamil-stylish block text-7xl sm:text-9xl md:text-[11rem] lg:text-[13rem] xl:text-[15rem] 2xl:text-[17rem] font-bold text-[#0B4D2C] leading-none select-none drop-shadow-sm py-2">
+              காயல்
             </span>
           </h1>
 
