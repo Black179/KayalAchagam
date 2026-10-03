@@ -19,6 +19,18 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu when pathname changes
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
+  const toggleMenu = (e?: React.MouseEvent | React.TouchEvent) => {
+    if (e) {
+      e.stopPropagation();
+    }
+    setIsOpen((prev) => !prev);
+  };
+
   const navLinks = [
     { name: "HOME", href: "/" },
     { name: "ABOUT & ACTIVITIES", href: "/about" },
@@ -67,24 +79,24 @@ export const Navbar: React.FC = () => {
 
       {/* Main Sticky Navbar */}
       <nav
-        className={`sticky top-0 z-40 transition-all duration-300 ${
+        className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#06361D]/95 backdrop-blur-md shadow-xl py-3 border-b-2 border-[#FFFF00]"
-            : "bg-[#0B4D2C] py-4 border-b border-[#FFFF00]/40"
+            ? "bg-[#06361D]/95 backdrop-blur-md shadow-xl py-2.5 sm:py-3 border-b-2 border-[#FFFF00]"
+            : "bg-[#0B4D2C] py-3 sm:py-4 border-b border-[#FFFF00]/40"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center gap-2">
           {/* Logo Branding */}
-          <Link href="/" className="group flex items-center gap-3">
+          <Link href="/" className="group flex items-center gap-2.5 sm:gap-3 min-w-0 flex-1 sm:flex-initial">
             {/* Red & Yellow Emblem Box */}
-            <div className="w-10 h-10 rounded bg-[#C91818] border-2 border-[#FFFF00] flex items-center justify-center font-display font-black text-white text-xl shadow-md group-hover:scale-105 transition-transform">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 rounded bg-[#C91818] border-2 border-[#FFFF00] flex items-center justify-center font-display font-black text-white text-lg sm:text-xl shadow-md group-hover:scale-105 transition-transform">
               K
             </div>
-            <div>
-              <div className="font-display font-extrabold text-lg sm:text-xl tracking-wider text-[#FFFDF7] group-hover:text-[#FFFF00] transition-colors">
+            <div className="min-w-0">
+              <div className="font-display font-extrabold text-base sm:text-xl tracking-wider text-[#FFFDF7] group-hover:text-[#FFFF00] transition-colors truncate">
                 KAYAL ACHAGAM
               </div>
-              <div className="text-[10px] tracking-[0.25em] text-[#FFFF00] uppercase font-bold font-sans">
+              <div className="text-[9px] sm:text-[10px] tracking-[0.18em] sm:tracking-[0.25em] text-[#FFFF00] uppercase font-bold font-sans truncate">
                 Official Centre · Paramakudi
               </div>
             </div>
@@ -115,7 +127,7 @@ export const Navbar: React.FC = () => {
           </ul>
 
           {/* Action Button & Mobile Toggle */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
             <a
               href={`https://wa.me/${contactData.whatsappNumber}?text=${encodeURIComponent(contactData.whatsappDefaultMessage)}`}
               target="_blank"
@@ -127,51 +139,66 @@ export const Navbar: React.FC = () => {
             </a>
 
             <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-[#FFFF00] hover:text-white rounded border border-[#FFFF00]/40"
+              type="button"
+              id="mobile-nav-toggle-btn"
+              onClick={toggleMenu}
+              onTouchEnd={(e) => {
+                e.preventDefault();
+                toggleMenu(e);
+              }}
+              className="lg:hidden flex-shrink-0 min-w-[44px] min-h-[44px] flex items-center justify-center p-2 rounded border-2 border-[#FFFF00] bg-[#06361D] text-[#FFFF00] hover:text-white hover:bg-[#0B4D2C] active:scale-95 transition-all cursor-pointer touch-manipulation z-50 relative shadow-md"
               aria-label="Toggle Navigation Menu"
+              aria-expanded={isOpen}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6 pointer-events-none" />
+              ) : (
+                <Menu className="w-6 h-6 pointer-events-none" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation Drawer */}
-        {isOpen && (
-          <div className="lg:hidden bg-[#06361D] border-t border-[#FFFF00]/30 px-4 pt-3 pb-6 space-y-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`block text-sm font-bold tracking-widest py-2 px-3 rounded transition-colors uppercase ${
-                  pathname === link.href
-                    ? "bg-[#C91818] text-white border-l-4 border-[#FFFF00]"
-                    : "text-[#FFFDF7] hover:bg-white/10 hover:text-[#FFFF00]"
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
-            <div className="pt-2 border-t border-[#FFFF00]/20 flex flex-col gap-2">
-              <a
-                href={`tel:${contactData.phone}`}
-                className="w-full text-center bg-[#0B4D2C] border border-[#FFFF00] text-[#FFFF00] font-bold text-xs py-2.5 rounded tracking-wider uppercase"
-              >
-                Call: {contactData.phone}
-              </a>
-              <a
-                href={`https://wa.me/${contactData.whatsappNumber}?text=${encodeURIComponent(contactData.whatsappDefaultMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full text-center bg-[#C91818] text-white font-bold text-xs py-2.5 rounded border border-[#FFFF00] tracking-wider uppercase flex items-center justify-center gap-2"
-              >
-                <MessageSquare className="w-4 h-4 text-[#FFFF00]" />
-                <span>WhatsApp Enquiry</span>
-              </a>
-            </div>
+        <div
+          id="mobile-nav-drawer"
+          className={`lg:hidden bg-[#06361D] border-t-2 border-[#FFFF00] px-4 pt-3 pb-6 space-y-3 shadow-2xl transition-all duration-200 ${
+            isOpen ? "block" : "hidden"
+          }`}
+        >
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              onClick={() => setIsOpen(false)}
+              className={`block text-sm font-bold tracking-widest py-2.5 px-3 rounded transition-colors uppercase ${
+                pathname === link.href
+                  ? "bg-[#C91818] text-white border-l-4 border-[#FFFF00]"
+                  : "text-[#FFFDF7] hover:bg-white/10 hover:text-[#FFFF00]"
+              }`}
+            >
+              {link.name}
+            </Link>
+          ))}
+          <div className="pt-3 border-t border-[#FFFF00]/20 flex flex-col gap-2.5">
+            <a
+              href={`tel:${contactData.phone}`}
+              className="w-full text-center bg-[#0B4D2C] border border-[#FFFF00] text-[#FFFF00] font-bold text-xs py-3 rounded tracking-wider uppercase shadow"
+            >
+              Call: {contactData.phone}
+            </a>
+            <a
+              href={`https://wa.me/${contactData.whatsappNumber}?text=${encodeURIComponent(contactData.whatsappDefaultMessage)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center bg-[#C91818] text-white font-bold text-xs py-3 rounded border border-[#FFFF00] tracking-wider uppercase flex items-center justify-center gap-2 shadow"
+            >
+              <MessageSquare className="w-4 h-4 text-[#FFFF00]" />
+              <span>WhatsApp Enquiry</span>
+            </a>
           </div>
-        )}
+        </div>
+
       </nav>
     </>
   );
