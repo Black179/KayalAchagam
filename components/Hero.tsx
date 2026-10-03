@@ -30,12 +30,18 @@ export const Hero: React.FC = () => {
           </p>
         </div>
 
-        {/* Large Editorial Heading */}
-        <div className="text-center w-full max-w-7xl mx-auto px-2 sm:px-4">
-          <h1 className="w-full">
-            <span className="font-tamil-stylish block text-7xl sm:text-9xl md:text-[11rem] lg:text-[13rem] xl:text-[15rem] 2xl:text-[17rem] font-bold text-[#0B4D2C] leading-none select-none drop-shadow-sm py-2">
-              காயல்
-            </span>
+        {/* Large Editorial Heading - Centered Stylish Tamil Logo */}
+        <div className="text-center w-full max-w-5xl mx-auto px-4 my-4 flex flex-col items-center justify-center">
+          <h1 className="w-full flex justify-center items-center">
+            <Image
+              src="/images/kayal_tamil_logo.png"
+              alt="கயல் அச்சகம் - Kayal Achagam"
+              width={873}
+              height={124}
+              priority
+              className="w-full max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl h-auto object-contain mx-auto drop-shadow-md select-none transition-transform hover:scale-[1.02] duration-300"
+            />
+            <span className="sr-only">கயல் அச்சகம் - Kayal Achagam</span>
           </h1>
 
           <p className="mt-6 text-base sm:text-lg text-[#101814] font-semibold max-w-2xl mx-auto leading-relaxed">
