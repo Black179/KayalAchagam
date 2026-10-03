@@ -12,6 +12,28 @@ export interface Publication {
 
 export const publicationsData: Publication[] = [
   {
+    id: "pub-tamilvel-collection",
+    title: "தமிழுவேல் வரலாற்று & சமூக ஆய்வு நூல்கள் (4 நூல்கள்)",
+    titleTamil: "Tamizhvel Heritage & Social Research Publications",
+    author: "தமிழுவேல் (Tamizhvel)",
+    publisher: "பாண்டிய ராசாக்கள் விஷன் / கயல் அச்சகம்",
+    image: "/images/books/tamilvel_books_collection.jpg",
+    category: "Heritage Publications",
+    year: "2026",
+    description: "குருபூசை அரசியல், இந்துக்கள் இல்லை, சுந்தரலிங்கத் தேவேந்திரர் மற்றும் இம்மானுவேல் தேவேந்திரர் உள்ளிட்ட வரலாற்று ஆய்வு நூல் தொகுப்பு."
+  },
+  {
+    id: "pub-immanuel",
+    title: "சமூக உரிமைப் போராளி இம்மானுவேல் தேவேந்திரர்",
+    titleTamil: "Social Rights Fighter Immanuel Devendirar",
+    author: "தமிழவேள் (Tamizhvel)",
+    publisher: "பாண்டிய ராசாக்கள் விஷன் / கயல் அச்சகம்",
+    image: "/images/books/book_immanuel_devendirar.jpg",
+    category: "Historical Biography",
+    year: "2026",
+    description: "சமூக உரிமைக்காகவும் சமத்துவத்திற்காகவும் போராடிய தியாகி இம்மானுவேல் சேகரன் தேவேந்திரர் அவர்களின் வரலாற்று வாழ்க்கை ஆவணம்."
+  },
+  {
     id: "pub-1",
     title: "Thirukkural — Universal Tamil Ethics",
     titleTamil: "திருக்குறள் — உலகப் பொதுமறை",

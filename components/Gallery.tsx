@@ -36,10 +36,10 @@ export const Gallery: React.FC = () => {
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
-            className={`text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-sm border transition-all ${
+            className={`text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-sm border-2 transition-all ${
               activeCategory === cat
-                ? "bg-[#C91818] text-white border-[#FFFF01] shadow-md scale-105"
-                : "bg-[#FFFDF7] text-[#06361D] border-[#FFFF01]/60 hover:bg-[#FFFF01]/20"
+                ? "bg-[#C91818] text-white border-[#06361D] shadow-md scale-105"
+                : "bg-white text-[#06361D] border-[#0B4D2C]/30 hover:bg-[#0B4D2C] hover:text-white"
             }`}
           >
             {cat}
@@ -53,7 +53,7 @@ export const Gallery: React.FC = () => {
           <div
             key={item.id}
             onClick={() => setLightboxIndex(idx)}
-            className="group relative bg-[#06361D] rounded overflow-hidden border-2 border-[#FFFF01] aspect-[4/3] cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
+            className="group relative bg-[#06361D] rounded overflow-hidden border-2 border-[#FFFF00] aspect-[4/3] cursor-pointer shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
             <Image
               src={item.src}
@@ -63,8 +63,8 @@ export const Gallery: React.FC = () => {
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 flex flex-col justify-end">
-              <div className="flex items-center justify-between text-[#FFFF01]">
-                <span className="text-[10px] font-bold uppercase tracking-widest bg-[#C91818] text-white px-2 py-0.5 rounded border border-[#FFFF01]">
+              <div className="flex items-center justify-between text-[#FFFF00]">
+                <span className="text-[10px] font-bold uppercase tracking-widest bg-[#C91818] text-white px-2 py-0.5 rounded border border-[#FFFF00]">
                   {item.category}
                 </span>
                 <Maximize2 className="w-4 h-4 text-white" />

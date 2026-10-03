@@ -24,14 +24,14 @@ export const Contact: React.FC = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       {/* Contact Details & Official Badges */}
-      <div className="lg:col-span-6 bg-[#06361D] text-white p-8 sm:p-10 rounded-lg border-2 border-[#FFFF01] shadow-2xl relative overflow-hidden">
+      <div className="lg:col-span-6 bg-[#06361D] text-white p-8 sm:p-10 rounded-lg border-2 border-[#FFFF00] shadow-2xl relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#C91818]/20 rounded-full blur-2xl pointer-events-none" />
 
-        <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF01] uppercase border border-[#FFFF01] px-3 py-1 rounded mb-4">
+        <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF00] uppercase border border-[#FFFF00] px-3 py-1 rounded mb-4">
           Verified Official Contact
         </div>
 
-        <h3 className="font-display text-3xl sm:text-4xl text-[#FFFF01] font-extrabold mb-2">
+        <h3 className="font-display text-3xl sm:text-4xl text-[#FFFF00] font-extrabold mb-2">
           GET IN TOUCH
         </h3>
         <p className="font-tamil-serif text-lg text-[#FFFDF7] mb-6 font-bold">
@@ -40,12 +40,12 @@ export const Contact: React.FC = () => {
 
         <div className="space-y-6 text-sm">
           {/* Address Box */}
-          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF01]/40">
+          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF00]/40">
             <div className="p-2.5 rounded bg-[#C91818] text-white flex-shrink-0">
-              <MapPin className="w-5 h-5 text-[#FFFF01]" />
+              <MapPin className="w-5 h-5 text-[#FFFF00]" />
             </div>
             <div>
-              <div className="text-xs text-[#FFFF01] font-bold uppercase tracking-wider">Address</div>
+              <div className="text-xs text-[#FFFF00] font-bold uppercase tracking-wider">Address</div>
               <div className="font-tamil-serif font-bold text-base text-[#FFF5D0] mt-0.5">
                 {contactData.addressTamil}
               </div>
@@ -56,18 +56,18 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Phones Box */}
-          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF01]/40">
+          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF00]/40">
             <div className="p-2.5 rounded bg-[#C91818] text-white flex-shrink-0">
-              <Phone className="w-5 h-5 text-[#FFFF01]" />
+              <Phone className="w-5 h-5 text-[#FFFF00]" />
             </div>
             <div>
-              <div className="text-xs text-[#FFFF01] font-bold uppercase tracking-wider">Phone Numbers</div>
+              <div className="text-xs text-[#FFFF00] font-bold uppercase tracking-wider">Phone Numbers</div>
               <div className="text-base font-bold text-white mt-0.5">
-                <a href={`tel:${contactData.phone}`} className="hover:text-[#FFFF01] transition-colors">
+                <a href={`tel:${contactData.phone}`} className="hover:text-[#FFFF00] transition-colors">
                   {contactData.phone}
                 </a>
                 <span className="mx-2 text-white/40">|</span>
-                <a href={`tel:${contactData.alternatePhone}`} className="hover:text-[#FFFF01] transition-colors">
+                <a href={`tel:${contactData.alternatePhone}`} className="hover:text-[#FFFF00] transition-colors">
                   {contactData.alternatePhone}
                 </a>
               </div>
@@ -75,13 +75,13 @@ export const Contact: React.FC = () => {
           </div>
 
           {/* Email Box */}
-          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF01]/40">
+          <div className="flex items-start gap-4 p-4 rounded bg-[#0B4D2C] border border-[#FFFF00]/40">
             <div className="p-2.5 rounded bg-[#C91818] text-white flex-shrink-0">
-              <Mail className="w-5 h-5 text-[#FFFF01]" />
+              <Mail className="w-5 h-5 text-[#FFFF00]" />
             </div>
             <div>
-              <div className="text-xs text-[#FFFF01] font-bold uppercase tracking-wider">Email Address</div>
-              <a href={`mailto:${contactData.email}`} className="text-base font-bold text-white hover:text-[#FFFF01] transition-colors">
+              <div className="text-xs text-[#FFFF00] font-bold uppercase tracking-wider">Email Address</div>
+              <a href={`mailto:${contactData.email}`} className="text-base font-bold text-white hover:text-[#FFFF00] transition-colors">
                 {contactData.email}
               </a>
             </div>
@@ -92,9 +92,9 @@ export const Contact: React.FC = () => {
         <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
           <a
             href={`tel:${contactData.phone}`}
-            className="flex flex-col items-center justify-center p-3 rounded bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF01] transition-transform hover:-translate-y-0.5 text-center"
+            className="flex flex-col items-center justify-center p-3 rounded bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF00] transition-transform hover:-translate-y-0.5 text-center"
           >
-            <Phone className="w-4 h-4 text-[#FFFF01] mb-1" />
+            <Phone className="w-4 h-4 text-[#FFFF00] mb-1" />
             <span>Call</span>
           </a>
 
@@ -102,17 +102,17 @@ export const Contact: React.FC = () => {
             href={`https://wa.me/${contactData.whatsappNumber}?text=${encodeURIComponent(contactData.whatsappDefaultMessage)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center p-3 rounded bg-[#0B4D2C] hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF01] transition-transform hover:-translate-y-0.5 text-center"
+            className="flex flex-col items-center justify-center p-3 rounded bg-[#0B4D2C] hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF00] transition-transform hover:-translate-y-0.5 text-center"
           >
-            <MessageSquare className="w-4 h-4 text-[#FFFF01] mb-1" />
+            <MessageSquare className="w-4 h-4 text-[#FFFF00] mb-1" />
             <span>WhatsApp</span>
           </a>
 
           <a
             href={`mailto:${contactData.email}`}
-            className="flex flex-col items-center justify-center p-3 rounded bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF01] transition-transform hover:-translate-y-0.5 text-center"
+            className="flex flex-col items-center justify-center p-3 rounded bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs uppercase tracking-wider border border-[#FFFF00] transition-transform hover:-translate-y-0.5 text-center"
           >
-            <Mail className="w-4 h-4 text-[#FFFF01] mb-1" />
+            <Mail className="w-4 h-4 text-[#FFFF00] mb-1" />
             <span>Email</span>
           </a>
 
@@ -120,7 +120,7 @@ export const Contact: React.FC = () => {
             href={contactData.googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center justify-center p-3 rounded bg-[#FFFF01] hover:bg-[#e6e600] text-[#06361D] font-bold text-xs uppercase tracking-wider transition-transform hover:-translate-y-0.5 text-center"
+            className="flex flex-col items-center justify-center p-3 rounded bg-[#FFFF00] hover:bg-[#e6e600] text-[#06361D] font-bold text-xs uppercase tracking-wider transition-transform hover:-translate-y-0.5 text-center"
           >
             <Navigation className="w-4 h-4 text-[#06361D] mb-1" />
             <span>Directions</span>
@@ -129,7 +129,7 @@ export const Contact: React.FC = () => {
       </div>
 
       {/* Interactive Enquiry Form */}
-      <div className="lg:col-span-6 bg-white p-8 sm:p-10 rounded-lg border-2 border-[#FFFF01] shadow-xl">
+      <div className="lg:col-span-6 bg-white p-8 sm:p-10 rounded-lg border-2 border-[#0B4D2C]/40 shadow-xl">
         <h3 className="font-display text-2xl sm:text-3xl text-[#0B4D2C] font-extrabold mb-1">
           Direct Enquiry Form
         </h3>
@@ -212,10 +212,11 @@ export const Contact: React.FC = () => {
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs py-3.5 px-6 rounded border border-[#FFFF01] uppercase tracking-wider transition-all duration-300 shadow-md"
+              id="submit-enquiry-btn"
+              className="w-full flex items-center justify-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-extrabold text-sm py-4 px-6 rounded border-2 border-[#FFFF00] uppercase tracking-wider transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.01]"
             >
-              <Send className="w-4 h-4 text-[#FFFF01]" />
-              <span>Send Enquiry via WhatsApp</span>
+              <Send className="w-5 h-5 text-[#FFFF00]" />
+              <span>SUBMIT ENQUIRY / சமர்ப்பிக்கவும்</span>
             </button>
           </form>
         )}

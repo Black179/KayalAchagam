@@ -26,17 +26,17 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   )}`;
 
   return (
-    <div className="bg-white rounded-lg border-2 border-[#FFFF01]/60 p-6 sm:p-8 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
+    <div className="bg-white rounded-lg border-2 border-[#0B4D2C]/40 p-6 sm:p-8 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1 relative overflow-hidden">
       {/* Red Accent Top Bar */}
-      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C91818] via-[#FFFF01] to-[#0B4D2C]" />
+      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#C91818] via-[#FFFF00] to-[#0B4D2C]" />
 
       <div>
         {/* Header with Category Number & Icon */}
         <div className="flex justify-between items-start mb-4">
-          <div className="w-12 h-12 rounded bg-[#FFFDF7] border border-[#FFFF01] flex items-center justify-center shadow-inner group-hover:bg-[#C91818]/10 transition-colors">
+          <div className="w-12 h-12 rounded bg-amber-50 border border-[#0B4D2C]/30 flex items-center justify-center shadow-inner group-hover:bg-[#C91818]/10 transition-colors">
             {iconMap[service.iconName] || <Printer className="w-6 h-6 text-[#C91818]" />}
           </div>
-          <span className="num-stroke text-4xl sm:text-5xl font-extrabold select-none opacity-80">
+          <span className="text-4xl sm:text-5xl font-black text-[#0B4D2C]/30 select-none font-display">
             {service.categoryNumber}
           </span>
         </div>
@@ -58,7 +58,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           {service.items.map((item, idx) => (
             <span
               key={idx}
-              className="inline-flex items-center gap-1.5 bg-[#FFFDF7] text-[#06361D] text-xs font-semibold px-2.5 py-1 rounded border border-[#FFFF01]/60"
+              className="inline-flex items-center gap-1.5 bg-gray-50 text-[#06361D] text-xs font-semibold px-2.5 py-1 rounded border border-[#0B4D2C]/30"
             >
               <CheckCircle className="w-3.5 h-3.5 text-[#C91818]" />
               <span>{item}</span>
@@ -73,9 +73,9 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
           href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-full inline-flex items-center justify-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs py-2.5 px-4 rounded border border-[#FFFF01] uppercase tracking-wider transition-all duration-300 shadow"
+          className="w-full inline-flex items-center justify-center gap-2 bg-[#0B4D2C] hover:bg-[#C91818] text-white font-bold text-xs py-2.5 px-4 rounded border-2 border-[#FFFF00] uppercase tracking-wider transition-all duration-300 shadow"
         >
-          <MessageSquare className="w-4 h-4 text-[#FFFF01]" />
+          <MessageSquare className="w-4 h-4 text-[#FFFF00]" />
           <span>Enquire Service</span>
         </a>
       </div>

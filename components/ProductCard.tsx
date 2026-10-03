@@ -16,16 +16,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   )}`;
 
   return (
-    <div className="bg-white rounded-lg border-2 border-[#FFFF01] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+    <div className="bg-white rounded-lg border-2 border-[#0B4D2C]/40 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
       {/* Product Image Container */}
-      <div className="relative aspect-[4/3] bg-[#FFFDF7] overflow-hidden border-b border-[#FFFF01]/40">
+      <div className="relative aspect-[4/3] bg-amber-50/40 overflow-hidden border-b border-[#0B4D2C]/20">
         <Image
           src={product.image}
           alt={product.name}
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute top-3 left-3 bg-[#C91818] text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded border border-[#FFFF01] shadow">
+        <div className="absolute top-3 left-3 bg-[#C91818] text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded border border-[#FFFF00] shadow">
           {product.category}
         </div>
       </div>
@@ -33,7 +33,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       {/* Product Information */}
       <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
         <div>
-          <div className="flex items-center gap-1.5 text-xs text-[#FFFF01] font-bold uppercase tracking-wider mb-1">
+          <div className="flex items-center gap-1.5 text-xs text-[#0B4D2C] font-bold uppercase tracking-wider mb-1">
             <Tag className="w-3.5 h-3.5 text-[#C91818]" />
             <span>Organisation Merchandise</span>
           </div>
@@ -71,9 +71,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full inline-flex items-center justify-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs py-2.5 px-4 rounded border border-[#FFFF01] uppercase tracking-wider transition-all duration-300 shadow"
+            className="w-full inline-flex items-center justify-center gap-2 bg-[#C91818] hover:bg-[#991B1B] text-white font-bold text-xs py-2.5 px-4 rounded border-2 border-[#FFFF00] uppercase tracking-wider transition-all duration-300 shadow"
           >
-            <MessageSquare className="w-4 h-4 text-[#FFFF01]" />
+            <MessageSquare className="w-4 h-4 text-[#FFFF00]" />
             <span>Enquire Now</span>
           </a>
         </div>

@@ -8,10 +8,10 @@
   --brand-red: #c91818;
   --brand-red-dark: #991b1b;
   --brand-red-light: #ef4444;
-  --brand-yellow: #FFFF01;
+  --brand-yellow: #FFFF00;
   --brand-yellow-hover: #e6e600;
-  --brand-ivory: #faf6e9;
-  --brand-ivory-light: #fffdf7;
+  --brand-ivory: #FFFF00;
+  --brand-ivory-light: #FFFF00;
   --brand-charcoal: #101814;
   --brand-card-bg: #ffffff;
 }
@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-color: var(--brand-ivory);
+  background-color: #FFFF00;
   color: var(--brand-charcoal);
   font-family: 'Inter', 'Noto Sans Tamil', system-ui, sans-serif;
   overflow-x: hidden;
@@ -74,12 +74,12 @@ body {
 
 /* Decorative Backgrounds */
 .kolam-pattern {
-  background-image: radial-gradient(circle, rgba(255, 255, 1, 0.22) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(11, 77, 44, 0.12) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 
 .kolam-pattern-dark {
-  background-image: radial-gradient(circle, rgba(255, 255, 1, 0.13) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(255, 255, 0, 0.15) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .yellow-glow {
-  box-shadow: 0 0 28px rgba(255, 255, 1, 0.55);
+  box-shadow: 0 0 28px rgba(255, 255, 0, 0.55);
 }
 
 .red-badge-stroke {

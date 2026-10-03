@@ -16,7 +16,7 @@ export const activitiesData: Activity[] = [
     title: "Tamil Publication & Book Release Event",
     titleTamil: "தமிழ் நூல் வெளியீட்டு விழா",
     category: "Publications",
-    image: "/images/activities/event_launch.png",
+    image: "/images/books/tamilvel_books_collection.jpg",
     date: "Paramakudi, Tamil Nadu",
     location: "Paramakudi",
     description: "Official release ceremony for newly printed Tamil educational guides and cultural publications at Kayal Achagam.",

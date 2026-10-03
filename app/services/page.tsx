@@ -28,22 +28,22 @@ export default function ServicesPage() {
   return (
     <div className="space-y-0">
       {/* PAGE HEADER BANNER */}
-      <div className="bg-[#0B4D2C] text-white py-14 px-4 sm:px-6 lg:px-8 border-b-4 border-[#FFFF01] kolam-pattern">
+      <div className="bg-[#0B4D2C] text-white py-14 px-4 sm:px-6 lg:px-8 border-b-4 border-[#FFFF00] kolam-pattern">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF01] uppercase border border-[#FFFF01] px-3.5 py-1 rounded mb-3 bg-[#06361D]">
+          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF00] uppercase border border-[#FFFF00] px-3.5 py-1 rounded mb-3 bg-[#06361D]">
             Official Catalogue & Offerings
           </div>
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#FFFDF7]">
             SERVICES & PRODUCTS
           </h1>
-          <p className="font-tamil-serif font-bold text-xl text-[#FFFF01] mt-2">
+          <p className="font-tamil-serif font-bold text-xl text-[#FFFF00] mt-2">
             சேவைகள், பொருள்கள் & நூல் வெளியீடுகள்
           </p>
         </div>
       </div>
 
       {/* MAJOR AREA 1: SERVICES BY CATEGORY */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
         <div className="max-w-7xl mx-auto space-y-16">
           <SectionHeading
             badgeText="Document & Digital Solutions"
@@ -57,7 +57,7 @@ export default function ServicesPage() {
             return (
               <div key={groupName} className="space-y-6 pt-4">
                 <div className="flex items-center gap-3 border-b-2 border-[#C91818] pb-3">
-                  <span className="w-4 h-4 rounded-full bg-[#FFFF01]" />
+                  <span className="w-4 h-4 rounded-full bg-[#0B4D2C]" />
                   <h3 className="font-display font-extrabold text-2xl text-[#0B4D2C]">
                     {groupName}
                   </h3>
@@ -75,7 +75,7 @@ export default function ServicesPage() {
       </section>
 
       {/* MAJOR AREA 2: PRODUCTS CATALOGUE */}
-      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7] border-b border-[#FFFF01]/30">
+      <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badgeText="Organisation Merchandise"
@@ -93,10 +93,10 @@ export default function ServicesPage() {
               <button
                 key={cat}
                 onClick={() => setSelectedProductCategory(cat)}
-                className={`text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-sm border transition-all ${
+                className={`text-xs font-bold uppercase tracking-wider px-4 py-2 rounded-sm border-2 transition-all ${
                   selectedProductCategory === cat
-                    ? "bg-[#C91818] text-white border-[#FFFF01] shadow-md scale-105"
-                    : "bg-white text-[#06361D] border-[#FFFF01]/60 hover:bg-[#FFFF01]/20"
+                    ? "bg-[#C91818] text-white border-[#06361D] shadow-md scale-105"
+                    : "bg-white text-[#06361D] border-[#0B4D2C]/30 hover:bg-[#0B4D2C] hover:text-white"
                 }`}
               >
                 {cat}
@@ -114,7 +114,7 @@ export default function ServicesPage() {
       </section>
 
       {/* MAJOR AREA 3: PUBLICATIONS */}
-      <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
+      <section id="publications" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badgeText="Official Literature"

@@ -13,22 +13,22 @@ export default function ContactPage() {
   return (
     <div className="space-y-0">
       {/* PAGE HEADER BANNER */}
-      <div className="bg-[#0B4D2C] text-white py-14 px-4 sm:px-6 lg:px-8 border-b-4 border-[#FFFF01] kolam-pattern">
+      <div className="bg-[#0B4D2C] text-white py-14 px-4 sm:px-6 lg:px-8 border-b-4 border-[#FFFF00] kolam-pattern">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF01] uppercase border border-[#FFFF01] px-3.5 py-1 rounded mb-3 bg-[#06361D]">
+          <div className="inline-block text-[10px] font-bold tracking-[0.25em] text-[#FFFF00] uppercase border border-[#FFFF00] px-3.5 py-1 rounded mb-3 bg-[#06361D]">
             Official Media & Contact Hub
           </div>
           <h1 className="font-display text-4xl sm:text-6xl font-extrabold text-[#FFFDF7]">
             GALLERY & CONTACT
           </h1>
-          <p className="font-tamil-serif font-bold text-xl text-[#FFFF01] mt-2">
+          <p className="font-tamil-serif font-bold text-xl text-[#FFFF00] mt-2">
             புகைப்படக் கூடம் & தொடர்பு விவரங்கள்
           </p>
         </div>
       </div>
 
       {/* SECTION 1: RESPONSIVE GALLERY */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white border-b border-[#FFFF01]/30">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badgeText="Media Collection"
@@ -42,7 +42,7 @@ export default function ContactPage() {
       </section>
 
       {/* SECTION 2: OFFICIAL CONTACT SECTION */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFDF7]">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00]">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading
             badgeText="Direct Communication"
