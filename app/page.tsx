@@ -13,6 +13,7 @@ import { publicationsData } from "@/data/publications";
 import { activitiesData } from "@/data/activities";
 import { contactData } from "@/data/contact";
 import { Contact } from "@/components/Contact";
+import { PaymentQR } from "@/components/PaymentQR";
 import { ArrowRight, Phone, MessageSquare, Mail, Printer, BookOpen, Sparkles, MapPin } from "lucide-react";
 
 export default function HomePage() {
@@ -54,7 +55,7 @@ export default function HomePage() {
             </h2>
 
             <p className="font-tamil-serif font-bold text-xl sm:text-2xl text-[#C91818]">
-              காயல் அச்சகம் — பரமக்குடி சமூக சேவை மையம்
+              கயல் அச்சகம் — பரமக்குடி சமூக சேவை மையம்
             </p>
 
             <p className="text-[#101814] font-medium text-base sm:text-lg leading-relaxed">
@@ -210,7 +211,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. CONTACT CTA BAR & DIRECT ENQUIRY FORM */}
+      {/* 8. INSTANT DIGITAL PAYMENT & QR CODE */}
+      <section id="payment" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <SectionHeading
+            badgeText="Instant Digital Payments"
+            title="SCAN & PAY VIA QR CODE"
+            titleTamil="கட்டணம் செலுத்துதல் (QR குறியீடு)"
+            description="Scan our official PhonePe & UPI QR code to make immediate payment for your print orders, e-services, publications, or books."
+          />
+
+          <PaymentQR />
+        </div>
+      </section>
+
+      {/* 9. CONTACT CTA BAR & DIRECT ENQUIRY FORM */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-t-4 border-[#0B4D2C]">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading

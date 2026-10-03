@@ -25,7 +25,7 @@ export default function AboutPage() {
             ABOUT & ACTIVITIES
           </h1>
           <p className="font-tamil-serif font-bold text-xl text-[#FFFF00] mt-2">
-            காயல் அச்சகம் — அமைப்பு & சமூகச் செயல்பாடுகள்
+            கயல் அச்சகம் — அமைப்பு & சமூகச் செயல்பாடுகள்
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               <SectionHeading
                 badgeText="Organisation Heritage"
                 title="ABOUT KAYAL ACHAGAM"
-                titleTamil="காயல் அச்சகம் மையம் பற்றிய விவரம்"
+                titleTamil="கயல் அச்சகம் மையம் பற்றிய விவரம்"
                 centered={false}
               />
 
@@ -166,6 +166,9 @@ export default function AboutPage() {
               <div className="p-2 bg-[#06361D] text-center border-t border-[#FFFF00]/40">
                 <div className="text-xs font-bold text-[#FFFF00] font-tamil-sans">
                   இம்மானுவேல் சேகரன்
+                </div>
+                <div className="text-[10px] text-white/80 font-tamil-sans font-semibold mt-0.5">
+                  தமிழர் உரிமை போராளி
                 </div>
               </div>
             </div>

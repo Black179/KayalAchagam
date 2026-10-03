@@ -2,11 +2,12 @@ import React from "react";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Gallery } from "@/components/Gallery";
 import { Contact } from "@/components/Contact";
+import { PaymentQR } from "@/components/PaymentQR";
 import { contactData } from "@/data/contact";
 
 export const metadata = {
   title: "Gallery & Contact | Kayal Achagam",
-  description: "Official photo gallery and contact details for Kayal Achagam Centre, Paramakudi.",
+  description: "Official photo gallery, payment QR code, and contact details for Kayal Achagam Centre, Paramakudi.",
 };
 
 export default function ContactPage() {
@@ -41,7 +42,21 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* SECTION 2: OFFICIAL CONTACT SECTION */}
+      {/* SECTION 2: OFFICIAL DIGITAL PAYMENT (QR CODE) */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#FFFF00] border-b-2 border-[#0B4D2C]/20">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <SectionHeading
+            badgeText="Online & In-Person Payments"
+            title="SCAN & PAY VIA QR CODE"
+            titleTamil="கட்டணம் செலுத்துதல் (QR குறியீடு)"
+            description="Official PhonePe & UPI QR Code for instant payment of print orders, books, and e-services."
+          />
+
+          <PaymentQR />
+        </div>
+      </section>
+
+      {/* SECTION 3: OFFICIAL CONTACT SECTION */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00]">
         <div className="max-w-7xl mx-auto space-y-12">
           <SectionHeading

@@ -13,9 +13,9 @@ export interface Publication {
 export const publicationsData: Publication[] = [
   {
     id: "pub-tamilvel-collection",
-    title: "தமிழுவேல் வரலாற்று & சமூக ஆய்வு நூல்கள் (4 நூல்கள்)",
+    title: "தமிழ்வேள் வரலாற்று & சமூக ஆய்வு நூல்கள் (4 நூல்கள்)",
     titleTamil: "Tamizhvel Heritage & Social Research Publications",
-    author: "தமிழுவேல் (Tamizhvel)",
+    author: "தமிழ்வேல் (Tamizhvel)",
     publisher: "பாண்டிய ராசாக்கள் விஷன் / கயல் அச்சகம்",
     image: "/images/books/tamilvel_books_collection.jpg",
     category: "Heritage Publications",
@@ -26,7 +26,7 @@ export const publicationsData: Publication[] = [
     id: "pub-immanuel",
     title: "சமூக உரிமைப் போராளி இம்மானுவேல் தேவேந்திரர்",
     titleTamil: "Social Rights Fighter Immanuel Devendirar",
-    author: "தமிழவேள் (Tamizhvel)",
+    author: "தமிழ்வேல் (Tamizhvel)",
     publisher: "பாண்டிய ராசாக்கள் விஷன் / கயல் அச்சகம்",
     image: "/images/books/book_immanuel_devendirar.jpg",
     category: "Historical Biography",

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
 import { ProductCard } from "@/components/ProductCard";
 import { PublicationCard } from "@/components/PublicationCard";
+import { PaymentQR } from "@/components/PaymentQR";
 import { servicesData } from "@/data/services";
 import { productsData } from "@/data/products";
 import { publicationsData } from "@/data/publications";
@@ -128,6 +129,20 @@ export default function ServicesPage() {
               <PublicationCard key={pub.id} publication={pub} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* MAJOR AREA 4: DIGITAL PAYMENTS & SCAN TO PAY */}
+      <section id="payment" className="py-20 px-4 sm:px-6 lg:px-8 bg-[#FFFF00]">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <SectionHeading
+            badgeText="Online & Bill Payments"
+            title="SCAN & PAY VIA QR CODE"
+            titleTamil="கட்டணம் செலுத்துதல் (QR குறியீடு)"
+            description="Scan our official PhonePe & UPI QR code to make immediate payment for your orders, fees, or book purchases."
+          />
+
+          <PaymentQR />
         </div>
       </section>
     </div>

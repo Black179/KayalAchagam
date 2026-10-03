@@ -104,7 +104,9 @@ export const Hero: React.FC = () => {
                 <div className="text-[11px] font-bold text-[#FFFF00] font-tamil-sans">
                   இம்மானுவேல் சேகரன்
                 </div>
-                <div className="text-[9px] text-white/70 uppercase tracking-wider">Social Leader</div>
+                <div className="text-[9px] text-[#FFFF00] font-tamil-sans font-bold tracking-wide">
+                  தமிழர் உரிமை போராளி
+                </div>
               </div>
             </div>
           </div>

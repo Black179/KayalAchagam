@@ -16,7 +16,7 @@ export const productsData: Product[] = [
     nameTamil: "சமூக உரிமைப் போராளி இம்மானுவேல் தேவேந்திரர்",
     category: "Books",
     image: "/images/books/book_immanuel_devendirar.jpg",
-    description: "கயல் அச்சகம் வெளியிட்ட சமூக உரிமைப் போராளி இம்மானுவேல் தேவேந்திரர் வரலாற்று புத்தகம் (ஆசிரியர்: தமிழவேள்).",
+    description: "கயல் அச்சகம் வெளியிட்ட சமூக உரிமைப் போராளி இம்மானுவேல் தேவேந்திரர் வரலாற்று புத்தகம் (ஆசிரியர்: தமிழ்வேள்).",
     featured: true,
     specifications: ["Hardcover Volume", "Pandiya Rajakkal Vision", "Historic Documentation"]
   },
