@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { contactData } from "@/data/contact";
-import { ArrowRight, Phone, MessageSquare, ShieldCheck, MapPin, Printer } from "lucide-react";
+import { ArrowRight, Phone, MessageSquare, MapPin, Printer } from "lucide-react";
 
 export const Hero: React.FC = () => {
   return (
@@ -32,16 +32,11 @@ export const Hero: React.FC = () => {
 
         {/* Large Editorial Heading */}
         <div className="text-center max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#C91818] border-2 border-[#06361D] rounded text-white font-black text-xs uppercase tracking-widest mb-4 shadow">
-            <ShieldCheck className="w-4 h-4 text-[#FFFF00]" />
-            <span>Official Organisation Website · 2026</span>
-          </div>
-
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-[0.95] text-[#0B4D2C]">
-            KAYAL ACHAGAM
+          <h1 className="font-tamil-serif text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-[1.05] text-[#0B4D2C]">
+            காயல் அச்சகம்
             <span className="flex items-center justify-center gap-4 sm:gap-6 mt-3">
               <span className="h-1.5 flex-1 bg-gradient-to-r from-transparent via-[#0B4D2C] to-[#C91818]" />
-              <span className="text-[#C91818] font-black tracking-widest text-3xl sm:text-5xl lg:text-6xl drop-shadow-sm">
+              <span className="text-[#C91818] font-black tracking-widest text-3xl sm:text-5xl lg:text-6xl drop-shadow-sm font-display">
                 CENTRE
               </span>
               <span className="h-1.5 flex-1 bg-gradient-to-r from-[#C91818] via-[#0B4D2C] to-transparent" />
