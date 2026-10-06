@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kayalachagamparamakudi.com"),
   title: "Kayal Achagam | Official Website",
   description:
     "Official website of Kayal Achagam Centre, Paramakudi — Providing Printing Services, Document Processing, E-Services, Online Payments, Publications, and Tamil Heritage Merchandise.",
@@ -19,10 +20,13 @@ export const metadata: Metadata = {
     "Paramakudi E-Services"
   ],
   authors: [{ name: "Kayal Achagam Editorial Team" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Kayal Achagam | Official Website",
     description: "Official Printing, Publishing & Community E-Services Centre in Paramakudi, Tamil Nadu.",
-    url: "https://kayalachagam.org",
+    url: "https://kayalachagamparamakudi.com",
     siteName: "Kayal Achagam Centre",
     locale: "en_US",
     type: "website",
@@ -30,6 +34,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   }
 };
 

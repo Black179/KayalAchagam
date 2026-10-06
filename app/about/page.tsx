@@ -10,6 +10,9 @@ import { ShieldCheck, Calendar, MapPin, Award, BookOpen, HeartHandshake } from "
 export const metadata = {
   title: "About & Activities | Kayal Achagam",
   description: "Learn about Kayal Achagam Centre, Paramakudi — Our purpose, Tamil heritage, community e-services, and documented activities.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {

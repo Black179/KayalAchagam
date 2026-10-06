@@ -8,6 +8,9 @@ import { contactData } from "@/data/contact";
 export const metadata = {
   title: "Gallery & Contact | Kayal Achagam",
   description: "Official photo gallery, payment QR code, and contact details for Kayal Achagam Centre, Paramakudi.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
